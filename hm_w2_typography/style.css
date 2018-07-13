@@ -1,17 +1,38 @@
 /*font-styles*/
-@import url('https://fonts.googleapis.com/css?family=Iceland|Lovers+Quarrel|Overlock+SC');
+@import url('https://fonts.googleapis.com/css?family=Diplomata|Lancelot');
 /*
-font-family: 'Iceland', cursive;
-font-family: 'Overlock SC', cursive;
-font-family: 'Lovers Quarrel', cursive;
+font-family: 'Lancelot', cursive;
+font-family: 'Diplomata', cursive;
 */
+
+.header, .sizetwo, .capital{
+    font-family: 'Diplomata';
+}
+
 .italic{
     font-style: italic;
 }
 
+.capital{
+    text-transform: uppercase;
+    
+}
+
+.sizetwo{
+    font-size: 2em;
+    
+}
+
+.fonttwo{
+    font-family:"Lancelot";    
+}
+
+
 /*background image*/
 body{
     background-image: url("images/paper.jpg");        
+    background-repeat: repeat;
+    background-size: 350px auto;
 }
 
 /*content width and centering*/
@@ -24,41 +45,77 @@ body{
 
 /*h1*/
 h1{
-    
-    border: 1px solid blue;
-    
+    padding: 41.5px 0px 31px 0px;
+    font-size: 3.35em;    
 }
 
 
 /*qoute*/
-blockquote p{
-    border: 1px solid blue;
-    display: inline-block;
+blockquote p{      
     float: left;   
+    font-size: 1em;
     
 }
 
 .clearfix{
     clear: both;
+    
 }
 
 blockquote{
-    border: 1px solid red;
     width: 770px;
     margin: 0 auto;
 }
- .qoute{
-    display: inline-block;
-    border: 1px solid red;
+ 
+
+#qoute{
+    opacity: 0.5;
+    margin-top: -1.5px;
+}
+td{
+    padding: 5px;
+    font-size: 0.7em;
 }
 
 /*author*/
 #right{
-    border: 1px solid red;
     float: right;
+    margin-bottom: 25px;
+    font-size:0.35em;
+    padding-top:2px;
 }
 .size{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
+/*pargraph1 */
+p.pone{
+    font-size:1em;
+    padding-top:6px;
+    margin-bottom: 54.5px;
+    text-align: justify;
+}
+
+h2.capital.sizetwo{
+    padding-bottom: 27px;
+    font-size: 2.2em;
+}
+
+
+
+/*paragraph with oversized leter*/
+p.sizetwo{    
+    float: left; 
+    font-size: 2.2em; 
+    border: 1px solid red;
+    margin-top:1px;  
+      
+}
+
+p.pragraphl{
+    border: 1px solid red;
+    font-size: 1.1em;
+    height: 35px;
+    text-align: justify;
+}
 
