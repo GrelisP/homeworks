@@ -14,7 +14,7 @@
         <div class="width">
             <header>
                 <nav>
-                <img src="images/logo.jpg" alt="eraser"/>
+                <a href="#"><img src="images/logo.jpg" alt="eraser"/></a>
                     <table>
                         <tr>
                             <td><i class="fas fa-align-justify"></i></td>
@@ -36,57 +36,106 @@
                         R&eacute;server votre place le prochain cours de Yoga du rire !
                     </h2>
                     
-                        <table>
+                        <table class="one">
                             <tr>
                                 <th colspan="3">Yoga du rive avec Jacqueline (Paris)</th>
                             </tr>
                             <tr>
-                                <td>05 Jan 2016</td>
+                                <td>05 Janvier 2016</td>
                                 <td>15h30</td>
                                 <td>Reserver ce cr&eacute;neau</td>
                             </tr>
                             <tr>
-                                <td>07 Jan 2016</td>
+                                <td>07 Janvier 2016</td>
+                                <td>16h30</td>
+                                <td>Reserver ce cr&eacute;neau</td>
+                            </tr>
+                            <tr>
+                                <td>09 Janvier 2016</td>
                                 <td>15h30</td>
                                 <td>Reserver ce cr&eacute;neau</td>
                             </tr>
                             <tr>
-                                <td>09 Jan 2016</td>
-                                <td>15h30</td>
+                                <td>11 Janvier 2016</td>
+                                <td>16h30</td>
                                 <td>Reserver ce cr&eacute;neau</td>
-                            </tr>
-                            <tr>
-                                    <td>11 Jan 2016</td>
-                                    <td>15h30</td>
-                                    <td>Reserver ce cr&eacute;neau</td>
                             </tr>
                         </table>
-                        <table>
+                            <table class="one">
                                 <tr>
                                     <th colspan="3">Yoga du rive avec Roger (Marseille)</th>
                                 </tr>
                                 <tr>
-                                    <td>05 Jan 2016</td>
+                                    <td>05 Janvier 2016</td>
                                     <td>15h30</td>
                                     <td>Reserver ce cr&eacute;neau</td>
                                 </tr>
                                 <tr>
-                                    <td>07 Jan 2016</td>
+                                    <td>07 Janvier 2016</td>
+                                    <td>16h30</td>
+                                    <td>Reserver ce cr&eacute;neau</td>
+                                </tr>
+                                <tr>
+                                    <td>09 Janvier 2016</td>
                                     <td>15h30</td>
                                     <td>Reserver ce cr&eacute;neau</td>
                                 </tr>
                                 <tr>
-                                    <td>09 Jan 2016</td>
-                                    <td>15h30</td>
+                                    <td>11 Janvier 2016</td>
+                                    <td>16h30</td>
                                     <td>Reserver ce cr&eacute;neau</td>
-                                </tr>
-                                <tr>
-                                        <td>11 Jan 2016</td>
-                                        <td>15h30</td>
-                                        <td>Reserver ce cr&eacute;neau</td>
                                 </tr>
                             </table>
-                                <h3>Pour valider votre r&eacute;servation, compl&eacute;ter ce formulaire :</h3>
+                                <h3>
+                                    Pour valider votre r&eacute;servation, compl&eacute;ter ce formulaire :
+                                </h3>
+                                    <form>
+                                        <table>
+                                            <tr>
+                                                <td><input type="text" name="FirstName" placeholder="Votre pr&eacute;nom"/></td> <!--placeholder - hint in the input box-->
+                                                <td><input type="text" name="SurName" placeholder="Votre nom"/></td>
+                                            </tr>                                                
+                                                <tr>
+                                                    <td colspan="2"><input type="text" name="EMail" placeholder="Votre adresse mail"/></td>
+                                                </tr>                                                
+                                        </table>
+                                            <h4>
+                                                Quels sont les raisons de vorte venue?
+                                            </h4>
+                                                <table class="checkbox">
+                                                    <tr>
+                                                        <td rowspan="2" ><input type="checkbox" name="checkbox" value="Bike"></td>
+                                                        <td>Besoin de me d&eacute;tendre</td>
+                                                        <td><input type="checkbox" name="checkbox" value="Bike"></td>
+                                                        <td>Mon m&eacute;decin m'a conseill&eacute; de venir</td>
+                                                        <td><input type="checkbox" name="checkbox" value="Bike"> </td>
+                                                        <td>Je veux tester avec des amis</td>
+                                                    </tr>
+                                                </table>
+                                                    <h4>
+                                                        Voulez-vous souscrire &agrave; notre programme de fid&eacute;lite ?
+                                                    </h4>
+                                                        <table >
+                                                            <tr>
+                                                                <td><input type="radio" name="gender" value="Oui" checked>	&shy;	&shy;	&shy;Oui</td>
+                                                                <td><input type="radio" name="gender" value="Non">Non</td>
+                                                            </tr>
+                                                        </table>  
+                                                            <h4>
+                                                                Comment avez-vous connu Omnibus ?
+                                                            </h4>
+                                                                <select>
+                                                                    <option value="yes">Yes</option>
+                                                                    <option value="no">No</option>
+                                                                    <option value="maybe">Maybe</option>
+                                                                    <option value="wtf">What did you said?</option>
+                                                                </select>
+
+                                                                <button>Envoyer</button>
+
+
+
+                                    </form>
                 </main>
         </div>
     </body>
