@@ -1,0 +1,96 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Dancing+Script');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Bree Serif', serif;
+*/
+h2, header, main th, main h3 {
+    font-family: 'Dancing Script';
+    font-style: italic;      
+}
+
+
+/* logo*/
+img{
+    height: 50px;
+    width: 45px;   
+    float: left;
+    margin-top:-7px; 
+    padding-left: 20px;
+      
+}
+
+/*nav */
+
+
+nav{
+    
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+    padding:20px 0px 70px 0px;  
+    
+}
+
+nav table{
+    float: right;
+    color: rgb(105,192,176);
+    font-size: 17px; 
+    
+        
+}
+
+nav td{
+    
+    padding:0px 10px 0px 35px;
+    
+}
+
+.clearfix{
+    clear: both;
+}
+
+/*centering*/
+
+h2, main h3{
+    text-align: center;   
+}
+
+/*main*/
+main{
+    width:900px;
+    margin: 0 auto;
+}
+
+main table {
+    border: 1px solid rgba(131, 141, 140, 0.473);
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+main td{
+    border: 1px solid rgba(195, 202, 201, 0.473);
+    
+}
+
+main th{
+    text-align: left;
+    color: azure;
+    background-color: rgb(116, 211, 193);
+    height: 30px;
+}
+
+/*table cells formating*/
+main tr:nth-child(odd){
+    background-color: rgba(195, 202, 201, 0.473)
+}
+
+main td:nth-last-child(2), main td:nth-last-child(1){
+    text-align: center;
+}
+
+main td:first-child, main td:last-child{
+    width:350px;
+}
