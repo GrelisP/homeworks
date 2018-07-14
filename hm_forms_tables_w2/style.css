@@ -1,12 +1,19 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 /*
 font-family: 'Dancing Script', cursive;
 font-family: 'Bree Serif', serif;
+
+font-family: 'Open Sans Condensed', sans-serif;
 */
-h2, header, main th, main h3 {
+h4, h3, h2, header, main th, main h3 {
     font-family: 'Dancing Script';
     font-style: italic;      
+}
+main table.checkbox, main table.one tr:nth-child(2), main table.one tr:nth-child(3),main table.one tr:nth-child(4), main table.one tr:nth-child(5)   {
+    font-family: 'Open Sans Condensed';
+    
 }
 
 
@@ -16,11 +23,13 @@ img{
     width: 45px;   
     float: left;
     margin-top:-7px; 
-    padding-left: 20px;
-      
+    padding-left: 20px;      
 }
 
 /*nav */
+nav table tr:nth-child(2) td:hover{
+    color: black;
+}
 
 
 nav{
@@ -62,7 +71,7 @@ main{
     margin: 0 auto;
 }
 
-main table {
+main table.one {
     border: 1px solid rgba(131, 141, 140, 0.473);
     margin: 0 auto;
     width: 900px;
@@ -70,27 +79,107 @@ main table {
     border-collapse: collapse;
 }
 
-main td{
+main table.one td{
     border: 1px solid rgba(195, 202, 201, 0.473);
     
 }
 
-main th{
+main table.one th{
     text-align: left;
     color: azure;
     background-color: rgb(116, 211, 193);
     height: 30px;
+    padding-left: 5px;
+    
 }
 
 /*table cells formating*/
-main tr:nth-child(odd){
-    background-color: rgba(195, 202, 201, 0.473)
-}
-
-main td:nth-last-child(2), main td:nth-last-child(1){
+main table.one tr td:nth-child(2),main table.one tr td:nth-child(3){
     text-align: center;
 }
 
-main td:first-child, main td:last-child{
-    width:350px;
+
+main table.one tr td:nth-child(1){
+    padding: 5px 0px 5px 5px;
+}
+
+/*main middle col*/
+main table.one tr td:nth-child(2){
+    padding-right:5px;
+}
+
+
+
+/*hover n color*/
+main table.one td:nth-child(3):hover{
+    color: rgb(63, 5, 5);    
+}
+main table.one td:nth-child(3){
+    color:rgb(61, 214, 194);
+}
+
+main table.one tr:nth-child(odd){
+    background-color: rgba(218, 226, 225, 0.473)
+}
+    
+/*user data input*/
+
+main form table td [name=FirstName],main form table [name=SurName]{
+    border:none;
+    border-bottom: 1px solid rgb(61, 214, 194);   
+    width: 400px; 
+    color:rgb(61, 214, 194);
+    padding-left: 5px;
+    margin-left: 15px;
+    
+}
+
+main form table td [name=EMail]{
+    border:none;
+    border-bottom: 1px solid rgb(61, 214, 194);   
+    width: 824px; 
+    color:rgb(61, 214, 194);
+    padding-left: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/*check, radio, dropdown, submit */
+h3 {
+    text-align: center;
+    border: 1px solid red;
+    margin: 50px auto;
+}
+
+h4{
+    text-align: center;
+    border: 1px solid red;
+    margin: 50px auto;
+}
+
+main input[target=checkbox]{
+    font-family: 'Open Sans Condensed';
+    border: 1px solid red;
+
+}
+
+main table.checkbox td{
+    
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+
+main table.checkbox td:nth-child(even){    
+    padding:0px 20px 0px 20px;
+}
+
+main table.checkbox{
+    margin: 0 auto;
+
+}
+
+  input[type="radio"]{
+    margin:0 auto;
+    border: 1px solid red;
 }
