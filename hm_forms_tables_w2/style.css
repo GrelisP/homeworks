@@ -11,9 +11,8 @@ h4, h3, h2, header, main th, main h3 {
     font-family: 'Dancing Script';
     font-style: italic;      
 }
-main table.checkbox, main table.one tr:nth-child(2), main table.one tr:nth-child(3),main table.one tr:nth-child(4), main table.one tr:nth-child(5)   {
-    font-family: 'Open Sans Condensed';
-    
+select option,button, main div div span, main table.checkbox, main table.one tr:nth-child(2), main table.one tr:nth-child(3),main table.one tr:nth-child(4), main table.one tr:nth-child(5)   {
+    font-family: 'Open Sans Condensed';    
 }
 
 
@@ -32,33 +31,30 @@ nav table tr:nth-child(2) td:hover{
 }
 
 
-nav{
-    
+nav{    
     width: 540px;
     text-align: center;
     margin: 0 auto;
-    padding:20px 0px 70px 0px;  
-    
+    padding:20px 0px 70px 0px;     
 }
 
 nav table{
     float: right;
-    color: rgb(105,192,176);
-    font-size: 17px; 
-    
-        
+    color: #49C3B4;
+    font-size: 17px;           
 }
 
-nav td{
-    
+nav td{    
     padding:0px 10px 0px 35px;
-    
 }
 
 .clearfix{
     clear: both;
 }
 
+nav td a{
+    text-decoration: none;
+}
 /*centering*/
 
 h2, main h3{
@@ -66,7 +62,7 @@ h2, main h3{
 }
 
 /*main*/
-main{
+main div select, .last, main{
     width:900px;
     margin: 0 auto;
 }
@@ -86,18 +82,19 @@ main table.one td{
 
 main table.one th{
     text-align: left;
-    color: azure;
-    background-color: rgb(116, 211, 193);
+    color:#FFFFFF;
+    background-color: #49C3B4;
     height: 30px;
     padding-left: 5px;
-    
 }
 
+main table.one tr td:nth-child(3){
+    width:400px;
+}
 /*table cells formating*/
 main table.one tr td:nth-child(2),main table.one tr td:nth-child(3){
     text-align: center;
 }
-
 
 main table.one tr td:nth-child(1){
     padding: 5px 0px 5px 5px;
@@ -107,8 +104,6 @@ main table.one tr td:nth-child(1){
 main table.one tr td:nth-child(2){
     padding-right:5px;
 }
-
-
 
 /*hover n color*/
 main table.one td:nth-child(3):hover{
@@ -126,19 +121,18 @@ main table.one tr:nth-child(odd){
 
 main form table td [name=FirstName],main form table [name=SurName]{
     border:none;
-    border-bottom: 1px solid rgb(61, 214, 194);   
+    border-bottom: 1px solid #49C3B4;   
     width: 400px; 
     color:rgb(61, 214, 194);
     padding-left: 5px;
-    margin-left: 15px;
-    
+    margin-left: 15px;     
 }
 
 main form table td [name=EMail]{
     border:none;
-    border-bottom: 1px solid rgb(61, 214, 194);   
+    border-bottom: 1px solid #49C3B4;   
     width: 824px; 
-    color:rgb(61, 214, 194);
+    color:#49C3B4;
     padding-left: 5px;
     margin-left: 15px;
     margin-top: 20px;
@@ -146,26 +140,18 @@ main form table td [name=EMail]{
 
 /*check, radio, dropdown, submit */
 h3 {
-    text-align: center;
-    border: 1px solid red;
+    text-align: center;    
     margin: 50px auto;
 }
 
 h4{
-    text-align: center;
-    border: 1px solid red;
+    text-align: center;    
     margin: 50px auto;
 }
 
-main input[target=checkbox]{
-    font-family: 'Open Sans Condensed';
-    border: 1px solid red;
 
-}
 
-main table.checkbox td{
-    
-    border: 1px solid red;
+main table.checkbox td{   
     margin: 0 auto;
 }
 
@@ -176,10 +162,60 @@ main table.checkbox td:nth-child(even){
 
 main table.checkbox{
     margin: 0 auto;
-
 }
 
-  input[type="radio"]{
-    margin:0 auto;
-    border: 1px solid red;
+/*aligment inputs*/
+
+
+main div div {
+text-align: center;
 }
+
+main div select, main div div span{
+    padding: 0px 10px;
+}
+
+/*dropdown*/
+
+select option, button{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px AUTO;
+}
+select, select option{
+    color: #49C3B4;       
+}
+slect{
+    color: #49C3B4;
+    border:1px solid #49C3B4;
+}
+
+button{
+    margin: 20px;
+    background-color: #49C3B4;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-style: none;
+    width: 80px;
+    height: 40px;
+}
+
+.fill{
+    margin: 0 auto;
+}
+
+/*footer*/
+footer{
+    height: 200px;
+    background-color:#49C3B4;
+    color: #FFFFFF;    
+}
+
+footer p{
+    text-align: center;    
+    padding-top: 80px;  
+    color: rgba (218, 226, 225, 0.473);
+}
+
