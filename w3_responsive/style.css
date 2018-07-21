@@ -6,7 +6,7 @@
         flex-wrap: wrap;                    
     }
 
-    div:after {
+    div:after {        /*if there are not even number of colums an last row has odd number of blocks-it will align last block to the column.*/
         content: "";
         flex: auto;
         
