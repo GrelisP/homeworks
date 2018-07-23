@@ -1,0 +1,315 @@
+
+/*
+header{
+    text-align: center;
+    min-height: 100px;
+}
+
+nav img{height: 70px;
+}
+
+nav ul{padding: 0px
+}
+
+nav ul li{
+    list-style: none; 
+    margin: 3px;    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a{
+    color:white;
+    margin-left: 10px;
+}
+
+/*sections
+.hello, .about, .services, .contacts{
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    display: flex;    
+}
+
+.hello{
+    background-image: url("images/road.jpg"); 
+    justify-content: space-evenly; 
+}
+
+.about{
+    background-image: url("images/about.jpg"); 
+    
+}
+
+.services{
+    background-image: url("images/services.jpeg");    
+}
+
+.contacts{
+    background-image: url("images/contacts.jpg");     
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*h & p
+h1, .hello a{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.575);    
+    margin: 0 auto;    
+    padding: 10px 15px ;
+    text-align: center;    
+}
+
+.hello> a{background-color: black;    
+    } 
+
+h2{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.678);      
+    padding: 10px 15px ;
+    align-self: flex-start;
+    margin: 10px 0px 0px 10px;
+}
+
+.contacts>h2{margin:50px auto;
+    }
+
+.contacts>ol {
+    color: rgba(240, 248, 255, 0.548);         
+    padding: 10px 15px ;
+    align-self: flex-start;
+    margin: 10px 10px 50px 10px;
+    padding: 0px 500px;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.39);
+}
+
+footer{
+    height: 50px;
+    background-color: black;
+    color: rgba(253, 253, 253, 0.459);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    font-style: italic;
+}
+    
+h2, .about p, .services p, .contacts ol{
+    color: rgba(240, 248, 255, 0.548);     
+    padding: 10px 15px ;     
+}
+h2{
+    margin: 50px 10px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.services h2{
+    margin: 50px 10px 10px auto;
+}
+
+.about p, .services p,{
+    margin: 10px 10px 50px 10px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+
+
+*/
+
+
+    @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+    *{
+        box-sizing: border-box;
+        font-family: 'Crimson Text', serif;
+    }
+
+    nav{
+        text-align: center;
+        min-height: 100px;
+    }
+
+    nav img{height: 70px;
+    }
+
+    nav ul{padding: 0px
+    }
+
+    nav ul li{
+        list-style: none; 
+        margin: 3px;    
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .hello-wrapper, .about-wrapper, .services-wrapper, .contacts-wrapper{
+        min-height:200px;
+        background-size: cover;
+        background-position: center;
+        display: flex;   
+        justify-content: center;
+    }
+
+        .hello-wrapper{
+            background-image: url("images/road.jpg"); 
+        }
+
+        .about-wrapper{
+            background-image: url("images/about.jpg"); 
+        }
+
+        .services-wrapper{
+            background-image: url("images/services.jpeg");    
+        }
+
+        .contacts-wrapper{
+            background-image: url("images/contacts.jpg");     
+        }
+
+
+        .hello, .about, .services,  .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;           
+        }
+
+        .hello{justify-content: space-around;            
+        }
+                
+        .about, .services, .contacts, .hello{
+            align-items: center;
+        }        
+
+    h1, h2 {
+        color: rgb(204, 204, 203);
+        background-color: rgba(0, 0, 0, 0.623);
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    p{
+        color: rgb(204, 204, 203);
+        background-color: rgba(0, 0, 0, 0.37);
+        margin:0px 10px 50px 10px ;
+        padding: 10px;
+    }
+
+
+    .about h2{
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .services h2{
+        align-self: flex-end;
+        margin-right:10px;
+    }
+
+    .hello>a{    
+            text-decoration: underline;
+            color: white;
+            background-color:black;
+            padding: 10px;
+            margin-bottom:50px;
+    }
+
+    .contacts>ol{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+    }
+
+    .contacts div{
+        height: 20px;
+        width: 100%;   
+        background-color: rgba(0, 0, 0, 0.37);
+        margin: 0px 10px 50px 10px;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    footer{
+        height: 50px;
+        background-color: black;
+        color: rgba(253, 253, 253, 0.459);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7em;
+        font-style: italic;
+    }
+
+    footer>a{
+        margin-left:10px;
+        color: white;
+        text-decoration: none;       
+    }
+
+@media only screen and (min-width:415px){    
+    header{
+        background-color: black;
+        min-height:40px;
+    }
+    nav, nav ul{
+        display: flex;        
+        margin:0 auto;
+        width: 60%;   
+        align-items: center;             
+    }
+    
+    nav img{height: 30px;
+        display: inline-block;
+    }
+
+    nav{
+        min-height: 40px;
+        justify-content: space-between;
+        
+    }
+    
+    nav ul li a{color:white;
+    }
+
+    nav ul{
+        justify-content: flex-end;
+        margin-right:0px;
+        white-space: nowrap;
+        flex-wrap: wrap;
+    }           
+  
+    .hello-wrapper, .about-wrapper, .services-wrapper, .contacts-wrapper{
+        min-height:400px;
+    }
+
+    p{margin-bottom:200px;
+    }
+
+    .about, .services, .contacts{width:60%;
+    }    
+
+    .hello a{
+        margin-top: 50px;
+    }
+
+    .hello{
+        justify-content: flex-start;
+    }
+
+    .contacts ol{
+        background-color: rgba(0, 0, 0, 0.151);
+        padding-top: 50px;  
+        width:100%;     
+    }
+    .contacts div{
+        margin-top:5px;
+    }
+
+}
+
+
